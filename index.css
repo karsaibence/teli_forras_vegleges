@@ -1,0 +1,35 @@
+html{
+    background-image: url(/GRID_TABLAZAT/kepek/hatter.jpg);
+}
+body{
+    margin-inline: 6rem;
+    margin-bottom: 4rem;
+    background-color: white;
+}
+.header{
+    grid-area: h;
+}
+.menu{
+    grid-area: m;
+}
+.pictures{
+    grid-area: p;
+}
+.aside{
+    grid-area: a;
+    
+}
+.footer{
+    grid-area: f;
+}
+.grid{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'h h h'
+    'm p a'
+    'f f f';
+    grid-template-columns: auto 1fr minmax(200px,300px);
+
+}
