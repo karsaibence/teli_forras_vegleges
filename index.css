@@ -1,35 +1,105 @@
-html{
+@import url(style/variables.css);
+@import url(style/buttons.css);
+@import url(style/imgbox.css);
+@import url(style/table.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
     background-image: url(/GRID_TABLAZAT/kepek/hatter.jpg);
 }
-body{
+
+body {
     margin-inline: 6rem;
     margin-bottom: 4rem;
-    background-color: white;
+    background-color: var(--bg-color);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.header{
+
+.header {
     grid-area: h;
+    background-image: url(GRID_TABLAZAT/kepek/fejlec.jpg);
+    color: var(--bg-color);
+    padding-bottom: 2rem;
+    text-shadow: 1px 1px var(--text-shadow-color);
+
 }
-.menu{
+
+.header h1 {
+    text-align: center;
+    padding-top: 4rem;
+
+}
+
+.menu {
     grid-area: m;
 }
-.pictures{
+
+.pictures {
     grid-area: p;
 }
-.aside{
+
+.pictures .picture_grid {
+    display: grid;
+    grid-template-areas:
+        'p1 p1'
+        'p2 p2';
+    grid-template-columns: auto auto;
+    padding-inline: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    gap: 1rem;
+}
+
+.aside {
     grid-area: a;
-    
+    border-bottom: solid 2px var(--asign-border-color);
+    border-top: solid 2px var(--asign-border-color);
+    border-left: solid 2px var(--asign-border-color);
+    padding-inline: .5rem;
 }
-.footer{
+
+.aside h2 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.aside h2,
+p {
+    padding-inline: 1rem;
+}
+
+.aside table {
+    margin-bottom: 3rem;
+}
+
+.aside a h6 {
+    font-size: 80%;
+    margin-bottom: 4rem;
+}
+
+.footer {
     grid-area: f;
+    background-color: var(--button-bg-color);
+    height: 50px;
 }
-.grid{
+
+.footer p {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.grid {
     width: 100%;
     min-height: 100vh;
     display: grid;
-    grid-template-areas: 
-    'h h h'
-    'm p a'
-    'f f f';
-    grid-template-columns: auto 1fr minmax(200px,300px);
-
+    grid-template-areas:
+        'h h h'
+        'm p a'
+        'f f f';
+    grid-template-columns: auto 1fr minmax(300px, 400px);
 }

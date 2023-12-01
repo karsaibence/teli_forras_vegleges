@@ -1,0 +1,66 @@
+.img {
+    width: 200px;
+    height: 100px;
+    margin: 1rem;
+    margin-bottom: 4rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+.tel1 {
+    background-image: url("../GRID_TABLAZAT/kepek/tel1.jpg");
+}
+
+.tel2 {
+    background-image: url("../GRID_TABLAZAT/kepek/tel2.jpg");
+}
+
+.tel3 {
+    background-image: url("../GRID_TABLAZAT/kepek/tel3.jpg");
+}
+
+.tel4 {
+    background-image: url("../GRID_TABLAZAT/kepek/tel4.jpg");
+}
+
+.tel5 {
+    background-image: url("../GRID_TABLAZAT/kepek/tel5.jpg");
+}
+
+.tel6 {
+    background-image: url("../GRID_TABLAZAT/kepek/tel6.jpg");
+}
+
+.tel7 {
+    background-image: url("../GRID_TABLAZAT/kepek/tel7.jpg");
+}
+
+.tel8 {
+    background-image: url("../GRID_TABLAZAT/kepek/tel8.jpg");
+}
+
+.img_box {
+    width: 200;
+    height: 200;
+    border: solid 1px var(--asign-border-color);
+    margin-inline: auto;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    background-color: var(--bg-color);
+}
+
+.img_box .primary {
+    grid-area: p1;
+    
+}
+.primary{
+    float: left;
+    transform: rotate(-8deg); 
+}
+
+.img_box .secundary {
+    grid-area: p2;
+}
+.secundary{
+    float: left;
+    transform: rotate(7deg);
+}
